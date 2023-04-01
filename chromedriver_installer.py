@@ -6,7 +6,8 @@ def install_chromedriver():
     os_name = platform.system()
     if os_name == 'Linux':
 
-        distro, version, _ = platform.linux_distribution()
+        distro  = platform.platform()
+         
 
         if 'debian' in distro.lower():
 
@@ -26,7 +27,7 @@ def install_chromedriver():
 
             subprocess.run(['sudo', 'pacman', '-S', 'chromedriver'])
         else:
-            print(f"Unsupported distribution: {distro} {version}")
+            print(f"Unsupported distribution: {distro}  ")
     elif os_name == 'Darwin':
 
         if not os.system('/usr/bin/which brew'):

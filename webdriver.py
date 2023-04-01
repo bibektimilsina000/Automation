@@ -20,6 +20,7 @@ def goToWebsite(WebsiteUrl, driver):
 
 
 def login(email, password, driver):
+    print(email,password)
     emailField = driver.find_element(By.ID, "email")
     emailField.clear()
     emailField.send_keys(email)
