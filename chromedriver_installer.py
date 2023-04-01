@@ -25,7 +25,7 @@ def install_chromedriver():
 
             subprocess.run(['sudo', 'pacman', '-Sy'])
 
-            subprocess.run(['sudo', 'pacman', '-S', 'chromedriver'])
+            subprocess.run(['yay', '-S', 'chromedriver'])
         else:
             print(f"Unsupported distribution: {distro}  ")
     elif os_name == 'Darwin':
