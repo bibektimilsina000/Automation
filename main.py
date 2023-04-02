@@ -7,9 +7,9 @@ from chromedriver_installer import install_chromedriver
 from tk_installer import install_tkinter
 
 def main():
-    install_chromedriver()
+    # install_chromedriver()
     install_tkinter()
-    install_requirements()
+    # install_requirements()
     cred =  get_credentials()
     driver = getWindowReady()
     goToWebsite(facebook, driver)

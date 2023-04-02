@@ -10,3 +10,5 @@ def install_requirements():
         print(f"Error: {e}")
     else:
         print("All packages from requirements.txt installed successfully!")
+        
+install_requirements()

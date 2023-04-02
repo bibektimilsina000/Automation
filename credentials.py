@@ -9,6 +9,8 @@ def get_credentials():
         nonlocal email, password
         email = email_field.get()
         password = password_field.get()
+        
+        login_screen.destroy()
 
     login_screen = Tk()
     login_screen.title("Login")
